@@ -25,6 +25,13 @@ jobs:
           command: |
             echo $(cat path_flags.json | jq)
 
+      - run:
+          name: What's inside the src/profile/common/locales/it-IT/common.ftl?
+          command: |
+            echo $(cat src/profile/common/locales/it-it/common.ftl)
+            cp -r src/profile/common/locales/it-it/* src/profile/common/locales/test/common.ft 
+            echo $(cat src/profile/common/locales/test/common.ft)
+
 workflows:
   setup-workflow:
     jobs:
