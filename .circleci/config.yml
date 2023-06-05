@@ -29,7 +29,7 @@ jobs:
           name: What's inside the src/profile/common/locales/it-IT/common.ftl?
           command: |
             echo $(cat src/profile/common/locales/it-IT/common.ftl)
-            cp -r src/profile/common/locales/it-IT/common.ftl src/profile/common/locales/test/common.ft 
+            cp src/profile/common/locales/it-IT/common.ftl src/profile/common/locales/test/common.ft 
             echo $(cat src/profile/common/locales/test/common.ft)
 
 workflows:
